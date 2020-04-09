@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg  custom">
+    <a class="navbar-brand">Inventory</a>
+    <button class="navbar-toggler " (click)="toggleNavbar()" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="navbar-toggler-icon fa fa-bars" style="color:azure"></i>
+  
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show':navbarOpen}">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active current">
+          <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item " routerLinkActive="active current">
+          <a class="nav-link" routerLink="newSale">Sales</a>
+        </li>
+        <li class="nav-item " routerLinkActive="active current">
+            <a class="nav-link" routerLink="addStock">Add Stock</a>
+          </li>
+        <li class="nav-item" routerLinkActive="active current">
+          <a class="nav-link" routerLink="newInvoice">Invoice</a>
+        </li>
+        <li class="nav-item dropdown" routerLinkActive="active current" ngbDropdown>
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
+            Stock
+          </a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdown" ngbDropdownMenu>
+            <a class="dropdown-item" routerLink="#">Pharma 1</a>
+            <a class="dropdown-item" routerLink="#">Pharma 2</a>
+            <a class="dropdown-item" routerLink="#"> Pharma X</a>
+            <a class="dropdown-item" routerLink="#"> Pharma X</a>
+            <a class="dropdown-item" routerLink="#"> Pharma X</a>
+            <a class="dropdown-item" routerLink="#"> Pharma X</a>
+            <a class="dropdown-item" routerLink="#"> Pharma X</a>
+  
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="#">  </a>
+          </div>
+        </li>
+      </ul>
+      
+      <!-- <ul class="nav navbar-nav navbar-right">
+  
+        <li *ngIf="!isLoggedIn()" class="nav-item dropdown" routerLinkActive="active current" ngbDropdown>
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
+            Login
+          </a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdown" ngbDropdownMenu>
+            <a class="dropdown-item" routerLink="/login" routerLinkActive="router-link-active"
+              [queryParams]="{loginFor:'employee'}">Employee</a>
+            <a class="dropdown-item" [queryParams]="{loginFor:'department'}" routerLink="/login">Department</a>
+            <div class="dropdown-divider"></div>
+            <a [queryParams]="{loginFor:'admin'}" routerLink="/login" class="dropdown-item">Admin</a>
+          </div>
+        </li>
+        <li *ngIf="isLoggedIn()" (click)="logout()" class="nav-item" routerLinkActive="active current">
+          <a routerLink="/" class="nav-link" routerLink="register">Logout</a>
+        </li>
+        <li *ngIf="!isLoggedIn()" class="nav-item" routerLinkActive="active current">
+          <a routerLink="/" class="nav-link" routerLink="register">Register</a>
+        </li>
+      </ul> -->
+    </div>
+  </nav>
+  
+  
+    <router-outlet></router-outlet>

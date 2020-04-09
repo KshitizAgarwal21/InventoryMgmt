@@ -1,0 +1,24 @@
+.sidenav-content{
+    width: 97%;
+    height: 90vh;
+    padding: 11%;
+    background-color: beige;   
+}
+ul{
+    list-style-type:none;
+    width: 100%;
+}
+ul>li{
+    padding-left: 8%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 8%;
+}
+
+ul>li:hover{
+    cursor: pointer;
+}
+ul>li:hover{
+    color: blue;
+    background: burlywood;
+}

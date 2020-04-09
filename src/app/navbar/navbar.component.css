@@ -1,0 +1,45 @@
+.active.current {
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .navbar-brand{
+      width: 10%;
+  }
+  
+  .navbar {
+    background: rgb(59, 26, 107);
+    position: fixed;
+    height: 10%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  
+  }
+  
+  a.nav-link {
+    color: whitesmoke;
+  }
+  
+  ul li {
+    color: whitesmoke;
+    cursor: pointer;
+  
+  }
+  
+  a.navbar-brand {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  
+  }
+  
+  a .navbar-brand :hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  span.navbar-toggler-icon {
+    color: wheat;
+  }
+  
